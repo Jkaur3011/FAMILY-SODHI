@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title> SODHI FAMILY BOOK</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="family.png">
+    </head>
+
+    <!--Body starting now-->
+    <body>
+        <center>
+        <h1 style="color: aqua;">
+            FAMILY BOOK
+        </h1>
+        <h4 style="color:greenyellow;">
+            Hello! Japnoor here. Today I will introduce you to my Family.
+        </h4>
+        <img id="family" src="https://i.pinimg.com/originals/00/67/8c/00678c2b5ed4661958f5437f0f8f0513.jpg"> <br>
+        <h4 id="names_of_family" style="font-style: italic;"> </h4> <br>
+        <div id="some_lines" style="font-weight: bold;"> </div>
+        <button style="background-color: darkblue; color: darkturquoise;" onclick="update()">NEXT</button>
+    </center>
+
+    <script>
+        //JavaScript starting
+
+        //Images:
+
+        var images = ["Manan.jpg", "Noor.jpg", "Mumma.jpg", "Papa.jpg", "Dadi.jpg", "Dadu.jpg", "family.png"];
+        //Names of My family:
+
+        var names = ["MANRAAJ KAUR", "JAPNOOR KAUR", "NAVDEEP KAUR", "AMRIT PAL SINGH", "MEENA SODHI", "GURDEV SINGH", "LOVELY FAMILY"];
+ 
+        //short lines on them:
+        var lines = 
+        ["This is My sister, Manraaj Kaur. She is 2 years younger than me. We both study in the same school. She fights with me 👊👊but I LOVE HER.",
+        "This is Me, Japnoor kaur. A fun and friendly girl. 🙂 I love to code and started it in 2020.💻 I love to play basketball and mind games like chess etc.♟️♟️ I want to reach to the final white hat and go to Silicon valley. In future, I want to be a computer programmer. I love MYSELF.",
+        "My mom! She has no bad things. She is the best mom! I like her cooking, every week, she makes me a new homemade cake.🍰🧁🎂 I LOVE HER!",
+        "This is my Dad! He agrees to my every thing. He loves me a lot. He is amazing in Maths and Science. ✖️➕🧠🧭He helps me in my studies. He is a businessman. I LOVE HIM!",
+        "Now my Dadi! She is also like my 2nd Mom. When My mom is not at home, she takes care of me. She is very good in Hindi whereas I am not so much! So, you know who helps me in Hindi!? I LOVE HER❣️❣️",
+        "Last not Least, My Dadu/ Grandfather! He helps me in everything. He is superb in Punjabi. He helps me to make coolers, smoothies, ice-creams etc. 🍦🍹🧃🥤He is lovely. I LOVE HIM!",
+        "So, This is my lovely family. All are the best! And Full Form of Family is = Father And Mother I love you! 👨‍👩‍👧‍👦There is no need to believe in fantasy stories but always believe in your family. They are the one who will take care of you always! SO LOVE THEM!❤️❤️❤️"];
+
+        var i = 0;
+        function update(){
+
+            
+            var numbers_of_family_members = 6;
+            if(i > numbers_of_family_members){
+                i = 0
+            };
+            var updated_image = images[i];
+            var updated_name = names[i];
+            var updated_lines = lines[i];
+            document.getElementById("family").src = updated_image;
+            document.getElementById("names_of_family").innerHTML = updated_name;
+            document.getElementById("some_lines").innerHTML = updated_lines;
+            i++
+        };
+
+        
+    </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+body{
+    background-color:darkviolet;
+}
+#some_lines{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size:large;
+    color:hotpink;
+}
+#names_of_family{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    color: gold;
+}
+#family{
+    width: 500px;
+}
